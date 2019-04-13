@@ -1,0 +1,67 @@
+/* :: 19.0 Sponsor Area CSS */
+
+.our-sponsor-client-area {
+    position: relative;
+    z-index: 1;
+    background-color: $bg-blue;
+}
+
+.our-sponsor-area {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+    .single-sponsor {
+        border: 1px solid $border-3;
+        @include flex(0 0 25%);
+        max-width: 25%;
+        width: 25%;
+        height: 240px;
+        @include display-flex(flex);
+        @include align-items-center;
+        @include justify-content-center;
+        margin-left: -1px;
+        margin-top: -1px;
+
+        @media #{$breakpoint-lg} {
+            height: 200px;
+        }
+
+        @media #{$breakpoint-md} {
+            height: 150px;
+        }
+
+        @media #{$breakpoint-xs} {
+            height: 80px;
+        }
+
+        a {
+            img {
+                @include transition-duration(300ms);
+                max-height: 110px;
+                opacity: 0.5;
+
+                @media #{$breakpoint-lg} {
+                    max-height: 90px;
+                }
+
+                @media #{$breakpoint-md} {
+                    max-height: 50px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    max-height: 30px;
+                }
+            }
+        }
+
+        &:hover,
+        &:focus {
+            a {
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
