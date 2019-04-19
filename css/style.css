@@ -1156,4 +1156,6 @@ text-shadow: none;
 		font-size: 2em;
 	}
 
-	
+	html{
+		scroll-behavior: smooth;
+	}
