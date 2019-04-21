@@ -1159,5 +1159,13 @@ text-shadow: none;
 	html{
 		scroll-behavior: smooth;
 	}
+	#awardone{
+		background-color:black;
+	}
+	#awardtwo{
+		background-color:black;
+	}
 
-	
+	#awardthree{
+		background-color:black;
+	}
