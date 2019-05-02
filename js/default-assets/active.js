@@ -260,6 +260,6 @@
 })(jQuery);
 
 $('li > a').click(function() {
-    $('li').removeClass();
+     $('.liclass').parent().removeClass();
     $(this).parent().addClass('active');
 });
